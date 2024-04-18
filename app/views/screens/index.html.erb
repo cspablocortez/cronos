@@ -1,6 +1,9 @@
 <p style="color: green"><%= notice %></p>
 
+<%= button_to "Create", new_screen_path, class: "btn btn-primary float-end" %>
+
 <h1>Screens</h1>
+
 
 <div id="screens">
   <% @screens.each do |screen| %>
@@ -11,4 +14,3 @@
   <% end %>
 </div>
 
-<%= link_to "New screen", new_screen_path %>

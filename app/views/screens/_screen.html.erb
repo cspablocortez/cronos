@@ -14,4 +14,9 @@
     <%= screen.user.username %>
   </p>
 
+  <p>
+    <strong>Created:</strong>
+    <%= "#{time_ago_in_words(screen.created_at)} ago" %>
+  </p>
+
 </div>
