@@ -7,7 +7,7 @@
   <% if @screen.user == current_user %>
     <%= link_to "Edit this screen", edit_screen_path(@screen) %> |
     <%= link_to "Back to screens", screens_path %>
+    <%= button_to "Destroy this screen", @screen, method: :delete %>
   <% end %>
 
-  <%= button_to "Destroy this screen", @screen, method: :delete %>
 </div>
