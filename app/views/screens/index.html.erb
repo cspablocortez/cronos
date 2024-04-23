@@ -9,7 +9,7 @@
 <div id="screens" class="container">
   <div class="row">
       <% @screens.each do |screen| %>
-        <div class="col-4">
+        <div class="col-md-4">
           <%= link_to screen do %>
             <%= render 'thumbnail', screen: screen %>
            <% end %>
