@@ -1,22 +1,2 @@
 @import 'bootstrap';
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-
-.screen-container {
-    position: relative;
-    max-width: 200px; /* Adjust width as needed */
-    height: auto; /* Adjust height as needed, or set a specific height */
-    overflow: hidden; /* Ensures no overflow from the positioned title */
-}
-
-.screen-container .screen-title {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    color: white; /* White text color */
-    text-align: center;
-    margin: 0; /* Removes default margin from paragraph tag */
-    padding: 10px 0; /* Adds padding to give space inside the bar */
-    box-sizing: border-box; /* Ensures padding is included in height */
-}
