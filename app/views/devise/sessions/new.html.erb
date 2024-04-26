@@ -1,6 +1,9 @@
-<h2>Log in</h2>
+<div class="sign-in-container">
+  <h2 class="text-center">Log in</h2>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<div class="row">
+
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'col-md-4 px-4'}) do |f| %>
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
@@ -18,9 +21,14 @@
     </div>
   <% end %>
 
-  <div class="actions">
-    <%= f.submit "Log in", class: "btn btn-primary my-4" %>
-  </div>
-<% end %>
+    <div class="actions">
+      <%= f.submit "Log in", class: "btn btn-primary my-4" %>
+    </div>
 
-<%= render "devise/shared/links" %>
+
+    <%= render "devise/shared/links" %>
+
+  <% end %>
+
+</div>
+</div>

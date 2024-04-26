@@ -1,12 +1,17 @@
 :root {
     --background-color: #f1f8fc;
-    --main-color: #62d2a2;
-    --hover-color: #1fab89;
+    --main-color: #f2613f;
+    --hover-color: #9b3922;
+    --text-color: #fff;
 }
 
 
 html, body {
     background-color: var(--background-color);
+}
+
+a {
+    color: var(--main-color);
 }
 
 .btn {
@@ -20,34 +25,14 @@ html, body {
     border-color: var(--hover-color);
 }
 
-input {
-    padding: 0.25rem;
-}
-
-input[type=email], input[type=password]  {
-    width: 100%;
-    margin-bottom: 1rem;
-    background: none;
-    border: none;
-    border-bottom: 1px solid gray;
-}
-
 input:focus {
-    outline: none;
-    border-bottom: 1px solid var(--main-color);
+    outline-color: var(--main-color);
 }
 
-a {
-    color: var(--main-color);
-}
 
-form {
-    margin: 0 auto;
-}
-
-.sign-in-container, .sign-up-container {
-    margin-top: 4rem;
-}
+/*.row {
+    border: 1px solid red;
+}*/
 
 .thumbnail {
     position: relative;

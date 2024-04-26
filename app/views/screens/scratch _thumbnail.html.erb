@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+
+<%= button_to "Create", new_screen_path, class: "btn btn-primary float-end", method: :get %>
+
+<h1>Screens</h1>
+
+<hr>
+
+<div id="screens" class="container text-center">
+  <div class="row">
+      <% @screens.each do |screen| %>
+        <div class="col">
+            <%= render 'thumbnail', screen: screen %>
+          <p><%= link_to "Show this screen", screen %></p>
+        </div>
+      <% end %>
+  </div>
+</div>
