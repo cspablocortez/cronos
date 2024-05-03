@@ -89,6 +89,19 @@ form em {
     text-align: center;
 }
 
+.preview {
+    position: relative;
+    text-align: center;
+    overflow: hidden; 
+    margin: 1rem;
+}
+
+.preview img {
+    max-height: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .thumbnail {
     position: relative;
     text-align: center;  
@@ -114,4 +127,8 @@ form em {
     color: white;
     padding: 5px;
     text-align: center; 
+}
+
+.thumbnail-preview img:hover {
+    transform: scale(1);
 }
