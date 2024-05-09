@@ -1,10 +1,16 @@
 class ScreensController < ApplicationController
-  before_action :authenticate_user! # , except: %i[ index show ]
+  before_action :authenticate_user!, except: %i[ index show ]
   before_action :set_screen, only: %i[ edit update destroy ]
+
+
+  def user_index
+    @screens = current_user.screens
+  end
 
   # GET /screens or /screens.json
   def index
-    @screens = current_user.screens
+    # @screens = current_user.screens
+    @screens = Screen.all
   end
 
   # GET /screens/1 or /screens/1.json
